@@ -4,3 +4,13 @@
   
   box-sizing: border-box;
 }
+
+/* For non-documents */
+ul, ol, menu{
+  list-style: none;
+}
+
+li{
+  margin: 0;
+  padding: 0;
+}
