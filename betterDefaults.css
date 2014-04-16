@@ -4,6 +4,7 @@
   background-size: cover;
   
   box-sizing: border-box;
+  border-collapse: collapse;
 }
 
 /* For non-documents */
@@ -15,3 +16,14 @@ li{
   margin: 0;
   padding: 0;
 }
+
+.table-layout{
+    display: table;
+}
+.table-layout > *{
+    display: table-row;
+}
+.table-layout > * > *{
+    display: table-cell;
+}
+            
