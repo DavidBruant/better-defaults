@@ -7,6 +7,10 @@
     border-collapse: collapse;
 }
 
+[hidden] { /* http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2014-May/254198.html */
+    display: none ! important;
+}
+
 
 html, body{
     padding: 0;
