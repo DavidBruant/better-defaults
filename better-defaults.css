@@ -4,6 +4,8 @@
 *, *:before, *:after {
     box-sizing: border-box;
     /* if you really care about older browsers, add prefixed versions at your own risks */
+    
+    overflow: auto; /* http://bocoup.com/weblog/new-overflow-default/ */
 }
 
 * {
