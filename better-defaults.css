@@ -35,12 +35,15 @@ html, body {
   In applications, there can be lists but HTML lists have bullet points and a bunch of useless styling attributes 
 */
 ul, ol, menu {
-    list-style: none;
-
     margin: 0;
     padding: 0;
 
 }
+
+ul, menu {
+    list-style: none;
+}
+
 li {
     margin: 0;
     padding: 0;
