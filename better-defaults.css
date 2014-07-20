@@ -39,12 +39,21 @@ ul, ol, menu {
 
     margin: 0;
     padding: 0;
-}
 
+}
 li {
     margin: 0;
     padding: 0;
 }
+
+/* empty divs being invisible is an annoying default */
+div:empty{
+  width: 300px;
+  height: 100px;
+  
+  background-color: rgb(224, 174, 224);
+}
+
 
 /*
   fairly classic thing to do
@@ -65,3 +74,4 @@ li {
 }
 
             
+
