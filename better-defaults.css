@@ -49,13 +49,6 @@ li {
     padding: 0;
 }
 
-/* empty divs being invisible is an annoying default */
-div:empty{
-  width: 300px;
-  height: 100px;
-  
-  background-color: rgb(224, 174, 224);
-}
 
 
 /*
@@ -64,10 +57,10 @@ div:empty{
 .table-layout {
     display: table;
 }
-.table-layout > *, .table-row-layout {
+.table-layout > * {
     display: table-row;
 }
-.table-layout > * > *, table-row-layout > * {
+.table-layout > * > *{
     display: table-cell;
     vertical-align: top;
 }
