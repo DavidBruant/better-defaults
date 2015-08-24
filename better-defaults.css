@@ -47,6 +47,10 @@ li {
     padding: 0;
 }
 
+/* default iframe borders are just ugly */
+iframe{
+	border: 0;
+}
 
 
 /*
@@ -66,6 +70,3 @@ li {
 * {
     border-collapse: collapse;
 }
-
-            
-
