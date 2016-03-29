@@ -53,20 +53,6 @@ iframe{
 }
 
 
-/*
-  fairly classic thing to do
-*/
-.table-layout {
-    display: table;
-}
-.table-layout > * {
-    display: table-row;
-}
-.table-layout > * > *{
-    display: table-cell;
-    vertical-align: top;
-}
-
 * {
     border-collapse: collapse;
 }
