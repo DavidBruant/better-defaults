@@ -47,9 +47,13 @@ li {
     padding: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 /* default iframe borders are just ugly */
 iframe{
-	border: 0;
+    border: 0;
 }
 
 
