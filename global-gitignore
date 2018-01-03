@@ -1,0 +1,8 @@
+# For Max users
+.DS_Store
+
+# to write note wherever
+notes.md
+
+# Temporary files created by gedit & libreoffice
+*~
