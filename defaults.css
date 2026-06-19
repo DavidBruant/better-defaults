@@ -1,3 +1,8 @@
+:root{
+    --couleur-primaire: purple;
+}
+
+
 /*
   http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 */
@@ -59,4 +64,76 @@ iframe{
 
 * {
     border-collapse: collapse;
+}
+
+details {
+    cursor: initial;
+}
+
+details > summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+details > summary::marker {
+    content: "";
+}
+
+@media not print {
+
+    details > summary::after {
+        padding: 0.2em 0.4em;
+        margin-left: 0.8em;
+
+        white-space: pre;
+        font-size: 0.8rem;
+        color: var(--couleur-primaire);
+        border: 1px solid var(--couleur-primaire);
+    }
+
+    details > summary::after{
+        content: "Open →";
+    }
+    [lang="fr"] details > summary::after{
+        content: "Déplier →";
+    }
+
+    details[open] > summary::after {
+        content: "Close ↓";
+    }
+    [lang="fr"] details[open] > summary::after {
+        content: "Replier ↓";
+    }
+
+    details > summary h1, details > summary h2, details > summary h3,  details > summary h4{
+        margin: 0;
+    }
+}
+
+
+
+@media print {
+    header,
+    footer,
+    nav {
+        display: none !important;
+    }
+    
+    article{
+        padding: 1rem 2rem;
+    }
+
+    details > summary::marker {
+        display: none;
+    }
+
+    ::details-content {
+        content-visibility: visible;
+        height: auto !important;
+    }
+
 }
